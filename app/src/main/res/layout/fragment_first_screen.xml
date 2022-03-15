@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".onboarding.screens.FirstScreen">
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300dp"
