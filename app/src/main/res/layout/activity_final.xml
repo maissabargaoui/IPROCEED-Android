@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary"
+    tools:context=".finalActivity">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <FrameLayout
+            android:id="@+id/framecontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginRight="150dp"
+
+                android:src="@drawable/ic_and" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginRight="150dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="For More Details!"
+                android:textColor="#FF5722"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="350dp"
+                android:layout_marginRight="100dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Choose  Role !"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_inst"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="450dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/button"
+                android:backgroundTint="@color/secondary"
+                android:onClick="getStarted"
+                android:text="Instructor"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_stu"
+                android:layout_width="283dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="530dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/button"
+                android:backgroundTint="#D9B8DF"
+                android:text="Student"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomappbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomnavigationbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:background="@android:color/transparent"
+                app:menu="@menu/bottom_nav_menu" />
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_home"
+            app:layout_anchor="@id/bottomappbar" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.iproceed">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,17 +12,41 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IPROCEED">
         <activity
-            android:name=".FreeCoursesActivity"
+            android:name=".CourseDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".CourseListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CourseCreateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CourseDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".finalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FreeCoursesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

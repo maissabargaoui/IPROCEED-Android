@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseListActivity"
+    android:background="#D9B8DF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_header"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Create Content"
+            android:gravity="start|bottom"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler"
+        android:layout_width="372dp"
+        android:layout_height="528dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="177dp"
+        android:layout_height="75dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:tint="@android:color/white"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</LinearLayout>

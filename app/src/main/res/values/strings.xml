@@ -2,4 +2,12 @@
     <string name="app_name">IPROCEED</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email" />
+    <string name="login">Login</string>
+    <string name="champ_vide">Empty!</string>
+    <string name="user" />
+    <string name="session" />
+    <string name="token">token</string>
+    <string name="signup">SignUp</string>
+    <string name="UserConfig" />
 </resources>
