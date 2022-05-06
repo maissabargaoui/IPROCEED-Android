@@ -7,7 +7,7 @@ object setData {
         Courselist.add(
             CourseData(
                 1,
-                "Introduction",
+                "Android",
                 "Free Content",
                 "Documentation",
                 "Easy",
@@ -22,7 +22,7 @@ object setData {
         Courselist.add(
             CourseData(
                 2,
-                "Why Kotlin",
+                "Kotlin",
                 "Free Content",
                 "Documentation",
                 "Easy",

@@ -30,8 +30,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/my_recycler"
-        android:layout_width="372dp"
-        android:layout_height="528dp" />
+        android:layout_width="match_parent"
+        android:layout_height="538dp"
+        android:layout_marginTop="5dp"
+        tools:context="com.example.iproceed.CourseListActivity"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/list_item" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -40,6 +44,8 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         android:tint="@android:color/white"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:ignore="SpeakableTextPresentCheck" />
+
 
 </LinearLayout>

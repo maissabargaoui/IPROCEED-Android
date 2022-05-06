@@ -10,7 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.iproceed.CourseDetailActivity
 import com.example.iproceed.R
 
-class CourseAdapter(private val courseList: List<Course>) : RecyclerView.Adapter<CourseAdapter.ViewHolder>() {
+
+class CourseAdapter(var courseList: List<Course>) : RecyclerView.Adapter<CourseAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
@@ -27,7 +28,6 @@ class CourseAdapter(private val courseList: List<Course>) : RecyclerView.Adapter
             val context = v.context
             val intent = Intent(context, CourseDetailActivity::class.java)
             intent.putExtra(CourseDetailActivity.ARG_ITEM_ID, holder.course!!.id)
-
             context.startActivity(intent)
         }
     }

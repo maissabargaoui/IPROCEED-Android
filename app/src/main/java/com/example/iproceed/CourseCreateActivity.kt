@@ -15,10 +15,12 @@ import util.CourseService
 import util.ServiceBuilder
 
 class CourseCreateActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_course_create)
-        //setSupportActionBar(toolbar)
+
+
         val context = this
 
         // Show the Up button in the action bar.
@@ -28,11 +30,10 @@ class CourseCreateActivity : AppCompatActivity() {
             val newCourse = Course()
             newCourse.name = et_name.text.toString()
             newCourse.description = et_description.text.toString()
-
+            newCourse.coursetype = et_coursetype.text.toString()
 
             val courseService = ServiceBuilder.buildService(CourseService::class.java)
             val requestCall = courseService.addCourse(newCourse)
-
             requestCall.enqueue(object: Callback<Course> {
 
                 override fun onResponse(call: Call<Course>, response: Response<Course>) {
@@ -51,4 +52,4 @@ class CourseCreateActivity : AppCompatActivity() {
             })
         }
     }
-    }
+}

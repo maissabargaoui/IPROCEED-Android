@@ -4,7 +4,10 @@ import Models.Course
 import retrofit2.Call
 import retrofit2.http.*
 
+
+
 interface CourseService {
+
     @GET("course")
     fun getCourseList(@QueryMap filter: HashMap<String, String>): Call<List<Course>>
 
@@ -20,8 +23,8 @@ interface CourseService {
         @Path("id") id: Int,
         @Field("name") name: String,
         @Field("description") desc: String,
-
-        ): Call<Course>
+        @Field("coursetype") coursetype: String
+    ): Call<Course>
 
     @DELETE("course/{id}")
     fun deleteCourse(@Path("id") id: Int): Call<Unit>

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.iproceed.helpers.CourseAdapter
+import kotlinx.android.synthetic.main.activity_course_create.*
 import kotlinx.android.synthetic.main.activity_course_list.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -14,9 +15,13 @@ import util.CourseService
 import util.ServiceBuilder
 
 class CourseListActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_course_list)
+
+        //setSupportActionBar(toolbar)
+        //toolbar.title = title
 
         fab.setOnClickListener {
             val intent = Intent(this@CourseListActivity, CourseCreateActivity::class.java)
@@ -67,12 +72,3 @@ class CourseListActivity : AppCompatActivity() {
         })
     }
 }
-
-
-
-
-
-
-
-
-

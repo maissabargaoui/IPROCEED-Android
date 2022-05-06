@@ -6,7 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_course_create.*
 import kotlinx.android.synthetic.main.activity_course_detail2.*
+import kotlinx.android.synthetic.main.activity_course_detail2.et_description
+import kotlinx.android.synthetic.main.activity_course_detail2.et_name
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -14,10 +17,12 @@ import util.CourseService
 import util.ServiceBuilder
 
 class CourseDetailActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_course_detail2)
 
+        //setSupportActionBar(detail_toolbar)
         // Show the Up button in the action bar.
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
@@ -49,9 +54,9 @@ class CourseDetailActivity : AppCompatActivity() {
                     course?.let {
                         et_name.setText(course.name)
                         et_description.setText(course.description)
+                        et_coursetype1.setText(course.coursetype)
 
-
-
+                        //collapsing_toolbar.title = course.name
                     }
                 } else {
                     Toast.makeText(this@CourseDetailActivity, "Failed to retrieve details", Toast.LENGTH_SHORT)
@@ -75,10 +80,10 @@ class CourseDetailActivity : AppCompatActivity() {
 
             val name = et_name.text.toString()
             val description = et_description.text.toString()
-
+            val coursetype = et_coursetype1.text.toString()
 
             val courseService = ServiceBuilder.buildService(CourseService::class.java)
-            val requestCall = courseService.updateCourse(id,name,description)
+            val requestCall = courseService.updateCourse(id, name, description, coursetype)
 
             requestCall.enqueue(object: Callback<Course> {
 

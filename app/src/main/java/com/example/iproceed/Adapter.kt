@@ -46,10 +46,10 @@ class Adapter(var course: List<CourseData>) : RecyclerView.Adapter<Adapter.myVie
             "syntax basics" -> {
                 dummyImage = R.drawable.ic_syn
             }
-            "introduction" -> {
+            "android" -> {
                 dummyImage = R.drawable.ic_intro
             }
-            "why kotlin" -> {
+            "kotlin" -> {
                 dummyImage = R.drawable.ic_kot
             }
             "layout material design" -> {
