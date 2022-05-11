@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.activity_course_create.*
 import kotlinx.android.synthetic.main.activity_course_detail2.*
 import kotlinx.android.synthetic.main.activity_course_detail2.et_description
 import kotlinx.android.synthetic.main.activity_course_detail2.et_name
+import kotlinx.android.synthetic.main.fragment_home.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -38,7 +39,9 @@ class CourseDetailActivity : AppCompatActivity() {
 
             initDeleteButton(id)
         }
+
     }
+
 
     private fun loadDetails(id: Int) {
 
@@ -130,6 +133,8 @@ class CourseDetailActivity : AppCompatActivity() {
                 }
             })
         }
+
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -145,4 +150,6 @@ class CourseDetailActivity : AppCompatActivity() {
 
         const val ARG_ITEM_ID = "item_id"
     }
+
+
 }

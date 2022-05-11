@@ -18,4 +18,5 @@ class finalActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+
 }

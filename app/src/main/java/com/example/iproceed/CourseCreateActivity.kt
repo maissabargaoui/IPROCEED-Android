@@ -1,8 +1,11 @@
 package com.example.iproceed
 
 import Models.Course
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_course_create.*
 import kotlinx.android.synthetic.main.activity_course_create.et_description
@@ -20,6 +23,17 @@ class CourseCreateActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_course_create)
 
+
+        val button1 = findViewById<Button>(R.id.btn_addmedia)
+        button1.setOnClickListener{
+            val intent = Intent(this, MediaActivity::class.java)
+            startActivity(intent)
+        }
+        val button = findViewById<Button>(R.id.btn_gomap)
+        button.setOnClickListener{
+            val intent = Intent(this, MapActivity::class.java)
+            startActivity(intent)
+        }
 
         val context = this
 
@@ -51,5 +65,10 @@ class CourseCreateActivity : AppCompatActivity() {
                 }
             })
         }
+
     }
+
+
+
+
 }

@@ -57,7 +57,7 @@
 
             <Button
                 android:id="@+id/btn_inst"
-                android:layout_width="278dp"
+                android:layout_width="252dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="450dp"
@@ -72,7 +72,7 @@
 
             <Button
                 android:id="@+id/btn_stu"
-                android:layout_width="283dp"
+                android:layout_width="248dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="530dp"
