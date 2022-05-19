@@ -46,6 +46,7 @@ class CourseCreateActivity : AppCompatActivity() {
             newCourse.description = et_description.text.toString()
             newCourse.coursetype = et_coursetype.text.toString()
 
+
             val courseService = ServiceBuilder.buildService(CourseService::class.java)
             val requestCall = courseService.addCourse(newCourse)
             requestCall.enqueue(object: Callback<Course> {

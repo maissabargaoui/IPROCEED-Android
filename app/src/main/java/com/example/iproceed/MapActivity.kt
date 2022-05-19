@@ -40,9 +40,9 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
-        // Add a marker in Sydney and move the camera
+        // Add a marker in instuction location and move the camera
         val ariana = LatLng(36.866537, 10.164723)
-        mMap.addMarker(MarkerOptions().position(ariana).title("Your face to face Instruction"))
+        mMap.addMarker(MarkerOptions().position(ariana).title("Instruction Location"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(ariana))
     }
 }

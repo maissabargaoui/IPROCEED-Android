@@ -8,6 +8,8 @@
         <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/drawable/bg_header.xml" value="0.15416666666666667" />
         <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/drawable/button.xml" value="0.2755208333333333" />
         <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/drawable/homebutt.xml" value="0.14010416666666667" />
+        <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/drawable/ic_baseline_chat_bubble_24.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2755208333333333" />
         <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/drawable/ic_getstarted.xml" value="0.1625" />
         <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/drawable/ic_launcher_background.xml" value="0.15416666666666667" />
         <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/drawable/ic_learn.xml" value="0.2712820512820513" />
@@ -17,7 +19,7 @@
         <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/layout/activity_course_create.xml" value="0.18385416666666668" />
         <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/layout/activity_course_detail.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/layout/activity_course_detail2.xml" value="0.18229166666666666" />
-        <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/layout/activity_course_list.xml" value="0.18229166666666666" />
+        <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/layout/activity_course_list.xml" value="0.264" />
         <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/layout/activity_final.xml" value="0.2" />
         <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/layout/activity_free_courses.xml" value="0.264" />
         <entry key="..\:/Users/barga/Desktop/IPROCEED/app/src/main/res/layout/activity_login.xml" value="0.264" />
